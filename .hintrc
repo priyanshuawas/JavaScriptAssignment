@@ -8,6 +8,13 @@
       {
         "label": "off"
       }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
     ]
   }
 }

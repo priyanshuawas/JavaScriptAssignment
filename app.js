@@ -27,6 +27,7 @@ window.onload = () => {
         renderTasks();
         form1.reset();
     }
+    
     function renderTasks() {
         todoBoard.innerHTML = "";
         inProgressBoard.innerHTML = "";

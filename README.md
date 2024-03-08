@@ -1,30 +1,22 @@
-To-Do List
-This is a simple web application for managing your tasks in a to-do list format. You can add, edit, delete, and mark tasks as completed. The tasks are organized into three categories: To Do, In Progress, and Completed.
+To-Do List Web Application
+Welcome to the To-Do List web application! Manage your tasks effortlessly with this simple yet powerful tool.
 
 Features
-Add Task: Add a new task with a name and due date.
-Edit Task: Edit the name of an existing task.
-Delete Task: Delete a task from the list.
-Mark Task as Completed: Mark a task as completed by checking a checkbox.
-Move Task: Move a task between To Do, In Progress, and Completed categories.
-Sort Tasks: Sort tasks by due date or status.
-Search Tasks: Search tasks by name.
+Add Task: Easily add new tasks with a name and due date.
+Edit Task: Modify the name of existing tasks on the go.
+Delete Task: Remove tasks from the list with a single click.
+Mark Task as Completed: Keep track of completed tasks by checking them off.
+Move Task: Organize tasks effortlessly between To Do, In Progress, and Completed categories.
+Sort Tasks: Arrange tasks by due date or status for better organization.
+Search Tasks: Find specific tasks quickly by searching for their names.
 Technologies Used
-HTML: Markup language for structuring the web page.
-CSS: Styling language for designing the appearance of the web page.
-JavaScript: Programming language for implementing interactive features.
-Bootstrap: Front-end framework for responsive and mobile-first design.
-Local Storage: API for storing tasks locally in the browser.
-Git: Version control system for tracking changes in the project.
-GitHub: Hosting platform for storing the project repository.
+HTML: Structure your web page efficiently.
+CSS: Design the appearance of your web page for a delightful user experience.
+JavaScript: Implement interactive features to enhance usability.
+Git: Track changes in the project efficiently with a version control system.
+GitHub: Collaborate and host your project repository effortlessly.
 Usage
-Clone the repository to your local machine.
-Open the index.html file in a web browser.
-Use the form to add new tasks, edit existing tasks, mark tasks as completed, move tasks between categories, and perform other actions.
-Tasks will be saved locally in the browser's storage and persist between sessions.
-Contributing
-<<<<<<< HEAD
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-=======
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
->>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
+Clone the Repository: Clone the project repository to your local machine using Git.
+Open the Application: Open the index.html file in any web browser of your choice.
+Start Managing Tasks: Use the intuitive form to add new tasks, edit existing tasks, mark tasks as completed, move tasks between categories, and perform other actions.
+Persistence: Your tasks will be saved locally in the browser's storage, ensuring that your data persists between sessions.

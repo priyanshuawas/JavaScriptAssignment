@@ -75,8 +75,8 @@ if __name__ == "__main__":
     @cross_origin(origins=[u"*"])
     def fetch_data():
         try:
-            start = int(request.args.get('start', 0))  # Default to 0 if not provided
-            limit = int(request.args.get('no_of_products', 10))  # Default to 10 if not provided
+            start = int(request.args.get('start', 0))  
+            limit = int(request.args.get('no_of_products', 10))  
             cols=[x for x in ['id','title', 'description', 'status','start_date','start_time','end_time','end_date']]
             res=[dict(zip(cols,row)) for row in DatagramProtocol]
             if dataclasses:
@@ -93,9 +93,6 @@ if __name__ == "__main__":
     def insert_data():
         try:
             data = request.json
-        # user_id=get_jwt_identity()
-        # data['posted_by'] = user_id  
-        # print(data)# Corrected line
             if data:
                 crm_db.insert_data("todos", ['id','title', 'description', 'status','start_date','start_time','end_time','end_date'], [data])
                 return jsonify({'message': 'Data inserted successfully'}),200
@@ -120,9 +117,6 @@ if __name__ == "__main__":
     def getTotalNoofTasks():
         return crm_db.getTotalNoofTasks()
 
-
-
-    # Updating a task
     update_task(db_cursor, 1, "Updated Task 1", "2024-03-11", "Updated description for Task 1", "inprogress")
 
     db_connection.commit()

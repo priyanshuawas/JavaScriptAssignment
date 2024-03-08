@@ -23,4 +23,8 @@ Open the index.html file in a web browser.
 Use the form to add new tasks, edit existing tasks, mark tasks as completed, move tasks between categories, and perform other actions.
 Tasks will be saved locally in the browser's storage and persist between sessions.
 Contributing
+<<<<<<< HEAD
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+=======
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46

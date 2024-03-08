@@ -9,6 +9,16 @@
         "label": "off"
       }
     ],
+<<<<<<< HEAD
     "no-inline-styles": "off"
+=======
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ]
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
   }
 }

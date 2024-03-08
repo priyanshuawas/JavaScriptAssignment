@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // app.js (continued)
 
 // window.onload = () => {
@@ -502,11 +503,14 @@
 // };
 // app.js
 
+=======
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 // window.onload = () => {
 //     const form1 = document.querySelector("#addForm");
 //     const todoBoard = document.getElementById("todo-board");
 //     const inProgressBoard = document.getElementById("inprogress-board");
 //     const completedBoard = document.getElementById("completed-board");
+<<<<<<< HEAD
 
 //     let tasks = [];
 
@@ -518,15 +522,31 @@
 //         const taskName = document.getElementById("item").value;
 //         const dueDate = document.getElementById("dueDate").value;
 
+=======
+//     let tasks = [];
+//     form1.addEventListener("submit", addItem);
+//     function addItem(e) {
+//         e.preventDefault();
+//         const taskName = document.getElementById("item").value;
+//         const dueDate = document.getElementById("dueDate").value;
+//         const description = document.getElementById("description").value;
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //         if (taskName.trim() === "" || dueDate.trim() === "") {
 //             alert("Please enter task name and due date.");
 //             return;
 //         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //         const task = {
 //             id: Date.now().toString(),
 //             name: taskName,
 //             dueDate: dueDate,
+<<<<<<< HEAD
+=======
+//             description: description.substring(0, 2000), // Limit description to 2000 characters
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //             status: "todo" // Default status is "To Do"
 //         };
 
@@ -556,19 +576,36 @@
 //             dueDate.classList.add("card-text");
 //             dueDate.textContent = `Due Date: ${task.dueDate}`;
 
+<<<<<<< HEAD
+=======
+//             const description = document.createElement("p");
+//             description.classList.add("card-description");
+//             description.textContent = task.description;
+
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //             const moveButton = document.createElement("button");
 //             moveButton.classList.add("btn", "btn-info", "float-right", "ml-2");
 //             moveButton.textContent = "Move";
 //             moveButton.addEventListener("click", () => {
 //                 moveTask(task.id);
 //             });
+<<<<<<< HEAD
 
+=======
+//             const editButton = document.createElement("button");
+//             editButton.classList.add("btn", "btn-primary", "float-right", "ml-2");
+//             editButton.textContent = "Edit";
+//             editButton.addEventListener("click", () => {
+//                 editTask(task.id);
+//             });
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //             const deleteButton = document.createElement("button");
 //             deleteButton.classList.add("btn", "btn-danger", "float-right", "ml-2");
 //             deleteButton.textContent = "Delete";
 //             deleteButton.addEventListener("click", () => {
 //                 deleteTask(task.id);
 //             });
+<<<<<<< HEAD
 
 //             cardBody.appendChild(taskName);
 //             cardBody.appendChild(dueDate);
@@ -576,6 +613,15 @@
 //             cardBody.appendChild(deleteButton);
 //             taskCard.appendChild(cardBody);
 
+=======
+//             cardBody.appendChild(taskName);
+//             cardBody.appendChild(dueDate);
+//             cardBody.appendChild(description); // Add description to card body
+//             cardBody.appendChild(moveButton);
+//             cardBody.appendChild(editButton);
+//             cardBody.appendChild(deleteButton);
+//             taskCard.appendChild(cardBody);
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //             if (task.status === "todo") {
 //                 todoBoard.appendChild(taskCard);
 //             } else if (task.status === "inprogress") {
@@ -585,6 +631,7 @@
 //             }
 //         });
 //     }
+<<<<<<< HEAD
 
 //     function moveTask(taskId) {
 //         const taskIndex = tasks.findIndex(task => task.id === taskId);
@@ -616,10 +663,56 @@
 //         const tasksString = localStorage.getItem("tasks");
 //         if (tasksString) {
 //             tasks = JSON.parse(tasksString);
+=======
+//     function moveTask(id) {
+//         const index = tasks.findIndex(task => task.id === id);
+//         if (index !== -1) {
+//             const task = tasks[index];
+//             if (task.status === "todo") {
+//                 task.status = "inprogress";
+//             } else if (task.status === "inprogress") {
+//                 task.status = "completed";
+//             }
+//             saveTasksToLocalStorage();
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //             renderTasks();
 //         }
 //     }
 
+<<<<<<< HEAD
+=======
+//     function editTask(id) {
+//         const index = tasks.findIndex(task => task.id === id);
+//         if (index !== -1) {
+//             const task = tasks[index];
+//             const newName = prompt("Enter new name for the task:", task.name);
+//             if (newName !== null) {
+//                 task.name = newName;
+//                 saveTasksToLocalStorage();
+//                 renderTasks();
+//             }
+//         }
+//     }
+
+//     function deleteTask(id) {
+//         const confirmation = confirm("Are you sure you want to delete this task?");
+//         if (confirmation) {
+//             tasks = tasks.filter(task => task.id !== id);
+//             saveTasksToLocalStorage();
+//             renderTasks();
+//         }
+//     }
+//     function saveTasksToLocalStorage() {
+//         localStorage.setItem("tasks", JSON.stringify(tasks));
+//     }
+//     function loadTasksFromLocalStorage() {
+//         const storedTasks = localStorage.getItem("tasks");
+//         if (storedTasks) {
+//             tasks = JSON.parse(storedTasks);
+//             renderTasks();
+//         }
+//     }
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 //     loadTasksFromLocalStorage();
 // };
 window.onload = () => {
@@ -627,32 +720,56 @@ window.onload = () => {
     const todoBoard = document.getElementById("todo-board");
     const inProgressBoard = document.getElementById("inprogress-board");
     const completedBoard = document.getElementById("completed-board");
+<<<<<<< HEAD
 
     let tasks = [];
 
+=======
+    let tasks = [];
+
+    // Event listener for form submission
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
     form1.addEventListener("submit", addItem);
 
     function addItem(e) {
         e.preventDefault();
+<<<<<<< HEAD
 
         const taskName = document.getElementById("item").value;
         const dueDate = document.getElementById("dueDate").value;
 
+=======
+        const taskName = document.getElementById("item").value;
+        const dueDate = document.getElementById("dueDate").value;
+        const description = document.getElementById("description").value;
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
         if (taskName.trim() === "" || dueDate.trim() === "") {
             alert("Please enter task name and due date.");
             return;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
         const task = {
             id: Date.now().toString(),
             name: taskName,
             dueDate: dueDate,
+<<<<<<< HEAD
+=======
+            description: description.substring(0, 2000), // Limit description to 2000 characters
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
             status: "todo" // Default status is "To Do"
         };
 
         tasks.push(task);
+<<<<<<< HEAD
         saveTasksToLocalStorage();
         renderTasks();
+=======
+        saveTasksToDatabase(task); // Save task to the database
+        renderTasks(); // Render tasks on UI
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
         form1.reset();
     }
 
@@ -676,6 +793,13 @@ window.onload = () => {
             dueDate.classList.add("card-text");
             dueDate.textContent = `Due Date: ${task.dueDate}`;
 
+<<<<<<< HEAD
+=======
+            const description = document.createElement("p");
+            description.classList.add("card-description");
+            description.textContent = task.description;
+
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
             const moveButton = document.createElement("button");
             moveButton.classList.add("btn", "btn-info", "float-right", "ml-2");
             moveButton.textContent = "Move";
@@ -699,11 +823,18 @@ window.onload = () => {
 
             cardBody.appendChild(taskName);
             cardBody.appendChild(dueDate);
+<<<<<<< HEAD
+=======
+            cardBody.appendChild(description);
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
             cardBody.appendChild(moveButton);
             cardBody.appendChild(editButton);
             cardBody.appendChild(deleteButton);
             taskCard.appendChild(cardBody);
+<<<<<<< HEAD
 
+=======
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
             if (task.status === "todo") {
                 todoBoard.appendChild(taskCard);
             } else if (task.status === "inprogress") {
@@ -713,6 +844,7 @@ window.onload = () => {
             }
         });
     }
+<<<<<<< HEAD
     function moveTask(taskId) {
         const taskIndex = tasks.findIndex(task => task.id === taskId);
         const currentStatus = tasks[taskIndex].status;
@@ -734,10 +866,25 @@ window.onload = () => {
         if (newName !== null) {
             taskToEdit.name = newName;
             saveTasksToLocalStorage();
+=======
+
+    function moveTask(id) {
+        const index = tasks.findIndex(task => task.id === id);
+        if (index !== -1) {
+            const task = tasks[index];
+            if (task.status === "todo") {
+                task.status = "inprogress";
+            } else if (task.status === "inprogress") {
+                task.status = "completed";
+            }
+            // Update task status in the database
+            updateTaskStatus(task.id, task.status);
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
             renderTasks();
         }
     }
 
+<<<<<<< HEAD
     function deleteTask(taskId) {
         tasks = tasks.filter(task => task.id !== taskId);
         saveTasksToLocalStorage();
@@ -756,4 +903,95 @@ window.onload = () => {
         }
     }
     loadTasksFromLocalStorage();
+=======
+    function editTask(id) {
+        const index = tasks.findIndex(task => task.id === id);
+        if (index !== -1) {
+            const task = tasks[index];
+            const newName = prompt("Enter new name for the task:", task.name);
+            if (newName !== null) {
+                task.name = newName;
+                // Update task name in the database
+                updateTaskName(task.id, task.name);
+                renderTasks();
+            }
+        }
+    }
+
+    function deleteTask(id) {
+        const confirmation = confirm("Are you sure you want to delete this task?");
+        if (confirmation) {
+            tasks = tasks.filter(task => task.id !== id);
+            // Delete task from the database
+            deleteTaskFromDatabase(id);
+            renderTasks();
+        }
+    }
+
+    function saveTasksToDatabase(task) {
+        // Implement your logic to save task to the database here
+        // Use AJAX, Fetch API, or any other method to send data to the backend
+        // Example:
+        // fetch('api/addTask', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(task),
+        // })
+        // .then(response => response.json())
+        // .then(data => console.log(data))
+        // .catch(error => console.error('Error:', error));
+    }
+
+    function updateTaskStatus(taskId, status) {
+        // Implement your logic to update task status in the database here
+    }
+
+    function updateTaskName(taskId, name) {
+        // Implement your logic to update task name in the database here
+    }
+
+    function deleteTaskFromDatabase(taskId) {
+        // Implement your logic to delete task from the database here
+    }
+
+    // Load tasks from the database on page load
+    // Implement logic to fetch tasks from the database and populate the tasks array
+    // Example:
+    // fetch('api/getTasks')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         tasks = data;
+    //         renderTasks();
+    //     })
+    //     .catch(error => console.error('Error:', error));
+
+    // For demonstration purposes, using a dummy tasks array
+    tasks = [
+        {
+            id: '1',
+            name: 'Task 1',
+            dueDate: '2024-03-10',
+            description: 'Description for Task 1',
+            status: 'todo'
+        },
+        {
+            id: '2',
+            name: 'Task 2',
+            dueDate: '2024-03-10',
+            description: 'Description for Task 2',
+            status: 'todo'
+        },
+        {
+            id: '3',
+            name: 'Task 3',
+            dueDate: '2024-03-10',
+            description: 'Description for Task 3',
+            status: 'todo'
+        }
+    ];
+
+    renderTasks();
+>>>>>>> be013830c7b32bef5c7d418508d1fdfdc0aa8c46
 };
